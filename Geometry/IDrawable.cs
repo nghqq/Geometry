@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,9 +8,8 @@ using System.Windows.Forms;
 
 namespace Geometry
 {
-    internal interface IHaveHeight
+    internal interface IDrawable
     {
-        double GetHeight();
-        void DrawHeight(PaintEventArgs e);
+        void Draw(PaintEventArgs e);
     }
 }

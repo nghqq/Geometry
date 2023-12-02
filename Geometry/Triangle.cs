@@ -4,10 +4,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Geometry
 {
-    internal class Triangle: Shape, IHaveHeight
+    abstract class Triangle: Shape, IHaveHeight
     {
         public abstract double GetHeight();
         public abstract void DrawHeight(PaintEventArgs e);
